@@ -3,12 +3,25 @@
  */
 package NodeTECH;
 
+// import org.springframework.boot.SpringApplication;
+// import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+/**
+ * アプリケーションクラス.
+ */
+// @SpringBootApplication
 public class App {
     public String getGreeting() {
         return "打首獄門同好会";
     }
 
+    /**
+     * アプリケーションのメインメソッド.
+     *
+     * @param args コマンドライン引数
+     */
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
+        // SpringApplication.run(App.class, args);
     }
 }
