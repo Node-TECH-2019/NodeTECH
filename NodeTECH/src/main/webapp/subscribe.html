@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ユーザ登録画面</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/header.css" />
+		<link rel="stylesheet" href="css/footer.css" />
+		<link rel="stylesheet" href="css/subscribe.css" type="text/css"/>
+		<link rel="stylesheet" href="css/login_pop.css"/>
+    <link rel="stylesheet" href="css/contact_pop.css" />
+    <link rel="stylesheet" href="css/hamburger.css" />
+    <link rel="stylesheet" href="css/floatingActionShareButton.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"/>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+  	<script src="js/form_validation.js" type="text/javascript"></script>
+  </head>
+
+	<body>
+		<div class="container">
+			<header class="header">
+        <div id="page_top"><a href="#"></a></div>
+        <div id="header_container">
+          <div class="header_left">
+            <a href="index.html">
+              <img src="images/logo.png" alt="Node TECH.のロゴ" class="logo"/>
+            </a>
+          </div>
+          <div class="header_center">
+            <a href="about.html#node_tech"><img src="images/icon.png" alt="Node TECH.のアイコン" class="icon"/></a>
+          </div>
+          <div class="header_right">
+            <ul>
+              <li>
+                <a href="index.html" class="home-button">HOME</a>
+              </li>
+              <li>
+                <a href="about.html" class="about-button">ABOUT</a>
+              </li>
+              <li>
+                <div class="contact_popupModal1">
+                  <input type="radio" name="modalPop" id="contact_pop11" />
+                  <label for="contact_pop11" class="contact_button">CONTACT</label>
+                  <input type="radio" name="modalPop" id="contact_pop12" />
+                  <label for="contact_pop12">CLOSE</label>
+                  <input type="radio" name="modalPop" id="contact_pop13" />
+                  <label for="contact_pop13">×</label>
+                  <div class="contact_modalPopup2">
+                    <div class="contact_modalPopup3">
+                      <h2 class="contact_title">お問い合わせ</h2>
+                      <div class="contact_container">
+                        <form class="contact_form">
+                          <div class="contact_input">
+                            <h3>氏名</h3>
+                            <input type="text">
+                            <h3>メールアドレス</h3>
+                            <input type="email">
+                          </div>
+                            <h3>種類</h3>
+                            <select>
+                              <option value="">やってほしい企画</option>
+                              <option value="">応援メッセージ</option>
+                              <option value="">不適切な動画</option>
+                              <option value="">コラボの依頼</option>
+                              <option value="">仕事の依頼</option>
+                              <option value="">その他</option>
+                            </select>
+                            <h3>内容</h3>
+                          <textarea class="contact_textarea" rows="8" cols="80"></textarea>
+                          <br>
+                          <div class="contact_submit_wrap">
+                            <input type="submit" class="contact_submit_button">
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="login_popupModal1">
+                  <input type="radio" name="modalPop" id="login_pop11" />
+                  <label for="login_pop11" class="login_button">LOGIN</label>
+                  <input type="radio" name="modalPop" id="login_pop12" />
+                  <label for="login_pop12">CLOSE</label>
+                  <input type="radio" name="modalPop" id="login_pop13" />
+                  <label for="login_pop13">×</label>
+                  <div class="login_modalPopup2">
+                    <div class="login_modalPopup3">
+                      <h2 class="login_title">ログイン画面</h2>
+                      <div class="login_container">
+                        <form class="login_form">
+                          <div class="login_input">
+                            <h3 class="login_id_text">ログインID</h3>
+                            <input type="text">
+                            <h3 class="login_pass_text">パスワード</h3>
+                            <input type="password">
+                          </div>
+                          <br>
+                          <div class="login_submit_wrap">
+                            <input type="submit" onclick="location.href='index.html'" value="ログイン" class="login_submit_button">
+                            <input type="button" onclick="location.href='subscribe.html'" value="新規ユーザー登録" class="login_submit_button">
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <nav class="global-nav">
+          <ul class="global-nav__list">
+            <li class="global-nav__item">
+              <a href="index.html" class="home-button">HOME</a>
+            </li>
+            <li class="global-nav__item">
+              <a href="about.html" class="about-button">ABOUT</a>
+            </li>
+            <li class="global-nav__item">
+              <div class="mobile_contact_popupModal1">
+                <input type="radio" name="modalPop" id="mobile_contact_pop11" />
+                <label for="mobile_contact_pop11" class="mobile_contact_button">CONTACT</label>
+                <input type="radio" name="modalPop" id="mobile_contact_pop12" />
+                <label for="mobile_contact_pop12">CLOSE</label>
+                <input type="radio" name="modalPop" id="mobile_contact_pop13" />
+                <label for="mobile_contact_pop13">×</label>
+                <div class="mobile_contact_modalPopup2">
+                  <div class="mobile_contact_modalPopup3">
+                    <h2 class="mobile_contact_title">お問い合わせ</h2>
+                    <div class="mobile_contact_container">
+                      <form class="mobile_contact_form">
+                        <div class="mobile_contact_input">
+                          <h3>氏名</h3>
+                          <input type="text">
+                          <h3>メールアドレス</h3>
+                          <input type="email">
+                        </div>
+                          <h3>種類</h3>
+                          <select>
+                            <option value="">やってほしい企画</option>
+                            <option value="">応援メッセージ</option>
+                            <option value="">不適切な動画</option>
+                            <option value="">コラボの依頼</option>
+                            <option value="">仕事の依頼</option>
+                            <option value="">その他</option>
+                          </select>
+                          <h3>内容</h3>
+                        <textarea class="mobile_contact_textarea" rows="8" cols="80"></textarea>
+                        <br>
+                        <div class="mobile_contact_submit_wrap">
+                          <input type="submit" class="mobile_contact_submit_button">
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="global-nav__item">
+              <div class="mobile_login_popupModal1">
+                <input type="radio" name="modalPop" id="mobile_login_pop11" />
+                <label for="mobile_login_pop11" class="mobile_login_button">LOGIN</label>
+                <input type="radio" name="modalPop" id="mobile_login_pop12" />
+                <label for="mobile_login_pop12">CLOSE</label>
+                <input type="radio" name="modalPop" id="mobile_login_pop13" />
+                <label for="mobile_login_pop13">×</label>
+                <div class="mobile_login_modalPopup2">
+                  <div class="mobile_login_modalPopup3">
+                    <h2 class="mobile_login_title">ログイン画面</h2>
+                    <div class="mobile_login_container">
+                      <form class="mobile_login_form">
+                        <div class="mobile_login_input">
+                          <h3 class="mobile_login_id_text">ログインID</h3>
+                          <input type="text">
+                          <h3 class="mobile_login_pass_text">パスワード</h3>
+                          <input type="password">
+                        </div>
+                        <br>
+                        <div class="mobile_login_submit_wrap">
+                          <input type="submit" onclick="location.href='index.html'" value="ログイン" class="mobile_login_submit_button">
+                          <input type="button" onclick="location.href='subscribe.html'" value="新規ユーザー登録" class="mobile_login_submit_button">
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="global-nav__item">
+              <a class="global-nav__item_fontsize" href="index.html#new_movie">
+                最新動画
+              </a>
+            </li>
+            <li class="global-nav__item">
+              <a class="global-nav__item_fontsize" href="index.html#new_column">
+                最新コラム
+              </a>
+            </li>
+            <li class="global-nav__item">
+              <div class="sidebar_search">
+                <form id="form" action="自分のサイトURL" method="get">
+                  <input id="sbox"  id="s" name="s" type="text" placeholder="フリーワードを入力"/>
+                  <button type="submit" id="sbtn"><i class="fa fa-search"></i></button>
+                </form>
+              </div>
+            </li>
+            <li class="global-nav__item">
+              <div class="sidebar_category">
+                <p><i class="fas fa-globe-asia"></i>カテゴリー</p>
+                <div class="cp_ipselect cp_sl04">
+                  <select id="sidebar_category__menu" class="sidebar_category__menu" name="sidebar_category">
+                    <option value="" hidden>選択してください</option>
+                    <option value="イチゴ">イチゴ</option>
+                    <option value="みかん">みかん</option>
+                    <option value="りんご">りんご</option>
+                    <option value="メロン">メロン</option>
+                    <option value="バナナ">バナナ</option>
+                  </select>
+                </div>
+              </div>
+            </li>
+            <li class="global-nav__item">
+              <div class="sidebar_tag">
+                <p><i class="fas fa-tags"></i>タグ</p>
+                <div class="cp_ipselect cp_sl04">
+                  <select id="sidebar_tag__menu" class="sidebar_tag__menu" name="sidebar_tag">
+                    <option value="" hidden>選択してください</option>
+                    <option value="イチゴ">イチゴ</option>
+                    <option value="みかん">みかん</option>
+                    <option value="りんご">りんご</option>
+                    <option value="メロン">メロン</option>
+                    <option value="バナナ">バナナ</option>
+                  </select>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <div class="hamburger" id="js-hamburger">
+          <span class="hamburger__line hamburger__line--1"></span>
+          <span class="hamburger__line hamburger__line--2"></span>
+          <span class="hamburger__line hamburger__line--3"></span>
+        </div>
+        <div class="black-bg" id="js-black-bg"></div>
+      </header>
+      <script type="text/javascript" src="js/hunburger.js"></script>
+      <!-- <div class="practice_header_padding"></div> -->
+
+      <div class="header_padding"></div>
+      <div id="main" class="subscribe_main">
+        <h2>ユーザ登録</h2>
+        <form name="MAINFORM" action="server.html" class="main_form">
+          <h3>連絡先</h3>
+          <ul class="properties">
+            <li>
+              <p class="contact_infomation">ニックネーム<p class="required">※必須</p></p>
+              <input name="nickname" type="text" maxlength="50" required placeholder="じゃがいもキング"/>
+            </li>
+            <li>
+              <p class="contact_infomation">フリガナ<p class="required">※必須</p></p>
+              <input name="furigana" type="text" maxlength="50" required placeholder="ヤマダ タロウ"/>
+            </li>
+            <li>
+              <p class="contact_infomation">ユーザーID<p class="required">※必須</p></p>
+              <input name="userid" type="text" maxlength="30" required placeholder="yamada_2020"/>
+            </li>
+            <li>
+              <p class="contact_infomation">E-mail<p class="required">※必須</p></p>
+              <input name="email" type="text" maxlength="50" required placeholder="office@example.jp"/>
+            </li>
+            <li>
+              <p class="contact_infomation">年齢<p class="required">※必須</p></p>
+              <select name="age" class="ageSelect">
+                <option value="">選択してください</option>
+                <option value="20歳未満">20歳未満</option>
+                <option value="20-29歳">20-29歳</option>
+                <option value="30-39歳">30-39歳</option>
+                <option value="40-49歳">40-49歳</option>
+                <option value="50-59歳">50-59歳</option>
+                <option value="60-69歳">60-69歳</option>
+                <option value="70-79歳">70-79歳</option>
+                <option value="80歳以上">80歳以上</option>
+              </select>
+            </li>
+            <li>
+              <p class="contact_infomation">パスワード<p class="required">※必須</p></p>
+              <input class="properties_password" name="password" type="password" pattern="^[0-9A-Za-z]+$" maxlength="20" minlength="8" placeholder="半角英数字8文字以上" required/>
+            </li>
+          </ul>
+        </form>
+        <p class="subscribe_submit">
+          <a href="subscribe_confirm.html"><input class="subscribe_submitButton" type="submit" value="フォームの送信" /></a>
+        </p>
+      </div>
+
+			<footer class="footer">
+        <div class="footer_topbox">
+          <div class="footer_search">
+            <i class="fas fa-search"></i>
+            <!-- <p class="footer_searchText">検索</p> -->
+            <form id="form" action="自分のサイトURL" method="get">
+              <input id="sbox" id="s" name="s" type="text" placeholder="フリーワードを入力" />
+              <button id="sbtn" type="submit"></button>
+            </form>
+          </div>
+          <div class="footer_category">
+            <i class="fas fa-globe-asia"></i>
+            <p class="footer_categoryText">カテゴリー</p>
+            <div class="cp_ipselect cp_sl04">
+              <select id="footer_category__menu" class="footer_category__menu" name="footer_category">
+                <option value="" hidden>選択してください</option>
+                <option value="イチゴ">イチゴ</option>
+                <option value="みかん">みかん</option>
+                <option value="りんご">りんご</option>
+                <option value="メロン">メロン</option>
+                <option value="バナナ">バナナ</option>
+              </select>
+            </div>
+          </div>
+          <div class="footer_tag">
+            <i class="fas fa-tags"></i>
+            <p class="footer_tagText">タグ</p>
+            <div class="cp_ipselect cp_sl04">
+              <select id="footer_tag__menu" class="footer_tag__menu" name="footer_tag">
+                <option value="" hidden>選択してください</option>
+                <option value="イチゴ">イチゴ</option>
+                <option value="みかん">みかん</option>
+                <option value="りんご">りんご</option>
+                <option value="メロン">メロン</option>
+                <option value="バナナ">バナナ</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="footer_middlebox">
+          <div class="footer_article__recommended">
+            <i class="fas fa-file-alt fas_1"></i>
+            <p><a href="#" class="footer_article__recommendedText">おすすめの記事</a></p>
+          </div>
+          <div class="footer_article__past">
+            <i class="fas fa-file-alt fas_2"></i>
+            <p><a href="#" class="footer_article__pastText">過去の記事</a></p>
+          </div>
+          <div class="footer_contact">
+            <i class="fas fa-user-circle fas_3"></i>
+            <div class="contact_popupModal1">
+              <input type="radio" name="modalPop" id="contact_pop11" />
+              <label for="contact_pop11" class="footer_contact_button">CONTACT</label>
+              <input type="radio" name="modalPop" id="contact_pop12" />
+              <label for="contact_pop12">CLOSE</label>
+              <input type="radio" name="modalPop" id="contact_pop13" />
+              <label for="contact_pop13">×</label>
+              <div class="contact_modalPopup2">
+                <div class="contact_modalPopup3">
+                  <h2 class="contact_title">お問い合わせ</h2>
+                  <div class="contact_container">
+                    <form class="contact_form">
+                      <div class="contact_input">
+                        <h3>氏名</h3>
+                        <input type="text">
+                        <h3>メールアドレス</h3>
+                        <input type="email">
+                      </div>
+                        <h3>種類</h3>
+                        <select>
+                          <option value="">やってほしい企画</option>
+                          <option value="">応援メッセージ</option>
+                          <option value="">不適切な動画</option>
+                          <option value="">コラボの依頼</option>
+                          <option value="">仕事の依頼</option>
+                          <option value="">その他</option>
+                        </select>
+                        <h3>内容</h3>
+                      <textarea class="mobile_contact_textarea" rows="8" cols="80"></textarea>
+                      <br>
+                      <div class="mobile_contact_submit_wrap">
+                        <input type="submit" class="mobile_contact_submit_button">
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer_mobile_contact">
+            <i class="fas fa-user-circle fas_3"></i>
+            <div class="mobile_contact_popupModal1">
+              <input type="radio" name="modalPop" id="mobile_contact_pop11" />
+              <label for="mobile_contact_pop11" class="footer_mobile_contact_button">CONTACT</label>
+              <input type="radio" name="modalPop" id="mobile_contact_pop12" />
+              <label for="mobile_contact_pop12">CLOSE</label>
+              <input type="radio" name="modalPop" id="mobile_contact_pop13" />
+              <label for="mobile_contact_pop13">×</label>
+              <div class="mobile_contact_modalPopup2">
+                <div class="mobile_contact_modalPopup3">
+                  <h2 class="mobile_contact_title">お問い合わせ</h2>
+                  <div class="mobile_contact_container">
+                    <form class="mobile_contact_form">
+                      <div class="mobile_contact_input">
+                        <h3>氏名</h3>
+                        <input type="text">
+                        <h3>メールアドレス</h3>
+                        <input type="email">
+                      </div>
+                        <h3>種類</h3>
+                        <select>
+                          <option value="">やってほしい企画</option>
+                          <option value="">応援メッセージ</option>
+                          <option value="">不適切な動画</option>
+                          <option value="">コラボの依頼</option>
+                          <option value="">仕事の依頼</option>
+                          <option value="">その他</option>
+                        </select>
+                        <h3>内容</h3>
+                      <textarea class="mobile_contact_textarea" rows="8" cols="80"></textarea>
+                      <br>
+                      <div class="mobile_contact_submit_wrap">
+                        <input type="submit" class="mobile_contact_submit_button">
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer_bottombox">
+          <div class="footer_top">
+            <a href="index.html" class="footer_home"><i class="fas fa-home"></i>HOME</a>
+          </div>
+          <ul class="footer_middle">
+            <li class="footer_listItems"><a href="#">利用規約</a></li>
+            <li class="footer_listItems"><a href="#">プライバシーポリシー</a></li>
+            <li class="footer_listItems"><a href="#">サイトマップ</a></li>
+            <li class="footer_listItems"><a href="#">カテゴリ一覧</a></li>
+            <li class="footer_listItems"><a href="#">タグ一覧</a></li>
+          </ul>
+          <div class="footer_bottom">
+            <p class="footer_copyright">&copy; 2019 Node TECH.</p>
+          </div>
+        </div>
+      </footer>
+		</div>
+  </body>
+</html>
